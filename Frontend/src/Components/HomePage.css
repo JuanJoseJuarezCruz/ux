@@ -1,0 +1,12 @@
+/* HomePage.css */
+.Fondo {
+    background-image: url('https://img.freepik.com/vector-gratis/fondo-galaxia-realista_23-2148991322.jpg?t=st=1728693110~exp=1728696710~hmac=b98f34dd0c12a8cadab62a5696de5c480677f02ecdeef58ba04530e06b8d4ffe&w=900'); /* Cambia esto por el link de tu imagen */
+    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  

@@ -1,0 +1,48 @@
+/* CategoryCard.css */
+
+.categories-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .category-card-small {
+    width: 180px;
+    margin-bottom: 10px; /* Reducir el margen entre tarjetas */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .category-card-small:hover {
+    transform: scale(1.05);
+  }
+  
+  .category-card-small img {
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 5px; /* Reducir espacio dentro de la tarjeta */
+  }
+  
+  .card-title {
+    font-size: 1rem;
+  }
+  
+  .btn-sm {
+    font-size: 0.8rem;
+    padding: 5px 10px; /* Botón más compacto */
+    
+  }
+  
+
+  .category-card-small .btn {
+    background-color: #4d004d; /* Cambia este color al que prefieras */
+    border-color: #4d004d; /* Para asegurar que el borde tenga el mismo color */
+  }
+  
+  .category-card-small .btn:hover {
+    background-color: #000000; /* Color cuando el botón esté en hover */
+    border-color: #000000; /* Borde en hover */
+  }
+  

@@ -1,0 +1,25 @@
+.product-info {
+    display: flex;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .product-info-image {
+    max-width: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  
+  .product-info-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-info-details h2 {
+    color: #002b80;
+    margin: 0 0 10px 0;
+  }
+  

@@ -1,0 +1,190 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #1f1f1f;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+.store-page {
+  display: flex;
+  padding: 20px;
+  position: relative; /* Permite que el botón no se superponga */
+}
+
+aside {
+  width: 250px;
+  padding: 20px;
+  background-color: #1f1f1f; /* Fondo oscuro para el sidebar */
+  color: white;
+}
+
+.filter-sidebar {
+  border-right: 1px solid #333;
+}
+
+.filter-category {
+  margin-bottom: 20px;
+}
+
+.product-list {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-left: 50px; /* Da margen para el botón */
+}
+
+.product-card {
+  background-color: #ffffff; /* Color de fondo oscuro */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.consult-btn {
+  padding: 10px 20px;
+  background-color: #4d004d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.consult-btn:hover {
+  background-color: #0d0d0d;
+}
+
+/* Estilo básico para el header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px;
+  background-color: #0d0d0d; /* Manteniendo tu color */
+  color: white;
+}
+
+.logo img {
+  width: 70px;
+  height: 70px;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav ul li {
+  margin-right: 20px;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.nav ul li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+  display: flex;
+}
+
+.search-bar input {
+  padding: 5px;
+  font-size: 16px;
+  background-color: #333; /* Fondo oscuro */
+  color: white;
+  border: none;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: #555;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #777;
+}
+
+/* Estilo del botón para mostrar/ocultar filtros */
+.toggle-filter-button {
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background-color: #4d004d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  position: fixed; /* Fija el botón para que no se mueva con el contenido */
+  top: 80px; /* Ajusta la altura del botón para evitar empalmes */
+  left: 10px; /* Lo alinea a la izquierda */
+  z-index: 100; /* Asegura que el botón esté sobre otros componentes */
+}
+
+.toggle-filter-button:hover {
+  background-color: #0d0d0d;
+}
+
+/* HomePage.css */
+.Fondo {
+  background-image: url('https://img.freepik.com/vector-gratis/fondo-galaxia-realista_23-2148991322.jpg?t=st=1728693110~exp=1728696710~hmac=b98f34dd0c12a8cadab62a5696de5c480677f02ecdeef58ba04530e06b8d4ffe&w=900'); /* Cambia esto por el link de tu imagen */
+  background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  min-height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .store-page {
+      flex-direction: column;
+  }
+
+  aside {
+      width: 100%;
+      margin-bottom: 1rem;
+  }
+
+  .product-list {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      margin-left: 0; /* Elimina el margen lateral en pantallas pequeñas */
+  }
+
+  .toggle-filter-button {
+      left: 10px; /* Asegura que el botón esté alineado a la izquierda en pantallas pequeñas */
+      top: 60px; /* Ajusta la altura del botón en móviles */
+  }
+}

@@ -1,0 +1,12 @@
+/* ImageSlider.css */
+
+.slider-container-small {
+    width: 50%; /* Ajusta el ancho del slider */
+    margin: 0 auto; /* Centra el slider */
+  }
+  
+  .slider-container-small img {
+    width: 100%; /* Asegura que las imágenes ocupen el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  
